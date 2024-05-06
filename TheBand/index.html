@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./TheBand.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons.css">
+    <script src="https://kit.fontawesome.com/0f2d543076.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li class="home"><a href="#slider">Home</a></li>
+                <li class="menu-item band"><a href="#about">Band</a></li>
+                <li class="menu-item tour"><a href="#tour">Tour</a></li>
+                <li class="menu-item contact"><a href="#contact">Contact</a></li>
+                <li class="more"><a href="">More<i class="ti-angle-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item merch"><a href="">Merch</a>
+            </ul>
+            <div class="search"><i class="ti-search"></i></div>
+            <div class="menu" onclick="document.getElementsByClassName('menu-item').style.display='block'"><i class="ti-menu"></i></div>
+
+        </div>
+        <div id="slider">
+            <div class="text-content">
+                <div class="text-heading">New York</div>
+                <div class="text-body"><b>The atmosphere in New York is lorem ipsum.</b></div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="about">
+                <div class="content-section about">
+                    <div class="section-heading">The Band</div>
+                    <div class="section-description"><i>We love music</i></div>
+                    <div class="About-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <div class="About-member">
+                        <div class="item">
+                            <p class="title">Name</p>
+                            <img src="./img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <p class="title">Name</p>
+                            <img src="./img/bandmember.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <p class="title">Name</p>
+                            <img src="./img/bandmember.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tour">
+                <div class="content-section tour">
+                    <div class="section-heading">Tour Dates</div>
+                    <div class="section-description"><i>Remember to book your tickets!</i></div>
+                    <ul class="Tour-time-list">
+                        <li class="time-item"> September
+                            <div class="sold-out"> Sold out</div>
+                        </li>
+                        <li class="time-item">October
+                            <div class="sold-out">Sold out</div>
+                        </li>
+                        <li class="time-item">November
+                            <div class="number">3</div>
+                        </li>
+                    </ul>
+                    <div class="places-list">
+                    <div class="place-item">
+                        <img src="./img/newyork.jpg" alt="">
+                        <div class="around">
+                            <div class="place-description">
+                                <div class="name"><b>New York</b></div>
+                                <div class="time">Fri 27 Nov 2016</div>
+                                <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="ticket-booking">
+                                    <button onclick="document.getElementById('payscreen').style.display='block'">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./img/paris.jpg" alt="">
+                        <div class="around">
+                            <div class="place-description">
+                                <div class="name">Paris</div>
+                                <div class="time">Sat 28 Nov 2016</div>
+                                <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="ticket-booking">
+                                    <button onclick="document.getElementById('payscreen').style.display='block'">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-item">
+                        <img src="./img/sanfran.jpg" alt="">
+                        <div class="around">
+                            <div class="place-description">
+                                <div class="name">San Francisco</div>
+                                <div class="time">Sun 29 Nov 2016</div>
+                                <div class="text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+                                <div class="ticket-booking">
+                                    <button onclick="document.getElementById('payscreen').style.display='block'">Buy Tickets</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="content-section contact">
+                    <div class="section-heading">Contact</div>
+                    <div class="section-description"><i>Fan? Drop a note!</i></div>
+                    <div class="contact-inside">
+                        <div class="detail">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i>Chicago, US</li>
+                                <li><i class="fa-solid fa-phone"></i>Phone: +00 151515</li>
+                                <li><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</li>
+                            </ul>
+                        </div>
+                        <form class="contact-form">
+                            <div class="name">
+                                <input type="text" required placeholder="Name">
+                            </div>
+                            <div class="email">
+                                <input type="text" required placeholder="Email">
+                            </div>
+                            <div class="message">
+                                <input type="text" required placeholder="Message">
+                            </div>
+                            <button type="submit">send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="map">
+                <img src="./img/map.jpg" alt="">
+            </div>
+        </div>
+        <div id="payscreen">
+            <div class="pay-form">
+                <div class="header">
+                    <div class="title">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Tickets
+                    </div>
+                    <i class="ti-close" onclick="document.getElementById('payscreen').style.display='none'"></i>
+                </div>
+                <div class="body">
+                    <div class="body-inside">
+                        <div class="ticket">
+                            <p><i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person</p>
+                            <input type="text">
+                        </div>
+                        <div class="send-to">
+                            <p><i class="fa-solid fa-user"></i>Send To</p>
+                            <input type="text">
+                        </div>
+                        <button class="pay">PAY
+                            <b><i class="ti-check"></i></b>
+                        </button>
+                        <div class="bot">
+                            <button class="close" onclick="document.getElementById('payscreen').style.display='none'">Close
+                                <i class="ti-close"></i>
+                            </button>
+                            <div class="help">Need <a href="#slider">help?</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+            <i class="ti-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="ti-linkedin"></i>
+            <div class="description">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></div>
+        </div>
+    </div>
+</body>
+</html>
