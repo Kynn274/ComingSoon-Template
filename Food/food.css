@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Karma',sans-serif;
+    font-size: 15px;
+    color: #000;
+    background-color: #fff;
+    line-height: 22.5px;
+}
+/*header*/
+#header{
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: #fff;
+}
+#header .menu{
+    float: left;
+    padding: 16px;
+}
+#header .mail{
+    float: right;
+    padding: 16px 0;
+}
+#header .myfood{
+    padding: 16px 0;
+}
+#header .cover{
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 36px;
+}
+#header .menu:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*sidebar*/
+#sidebar{
+    width: 40%;
+    min-width: 300px;
+    z-index: 2;
+    background-color: #fff;
+    font-size: 24px;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+    display: none;
+    animation: leftfloat 0.4s;
+}
+@keyframes leftfloat{
+    0%{
+        left:-300px;
+        opacity: 0;
+    }
+    100%{
+        left:0;
+        opacity: 1;
+    }
+}
+#sidebar a{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    line-height: 36px;
+    padding: 20px;
+}
+#sidebar a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*container*/
+#container{
+    margin: 100px auto 0;
+    padding: 8px 16px;
+}
+hr{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+/*menu*/
+#menu{
+    text-align: center;
+}
+#menu .row1,#menu .row2{
+    padding: 8px 16px;
+    display: flex;
+}
+#menu .dish{
+    padding: 0 8px;
+    width: 25%;
+}
+#menu img{
+    width: 100%;
+}
+#menu p{
+    margin:15px 0;
+}
+#menu .title{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 36px;
+}
+#menu .page-line{
+    padding:32px 0;
+    text-align: center;
+    width: 100%;
+}
+#menu .page-line a{
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+    float: left;
+}
+#menu .page-line .num1,#menu .page-line a:hover{
+    background-color: #000;
+    color: #fff;
+}
+#menu .page-line .num1:hover{
+    color: #000;
+    background-color: #ccc;
+}
+#menu .page-line .cover{
+    width: auto;
+    margin: 0 auto;
+    display: inline-block;
+}
+/*about*/
+#about{
+    padding: 32px 16px;
+    text-align: center;
+}
+#about .title{
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+#about img{
+    margin: auto;
+    max-width: 100%;
+}
+#about .context{
+    padding: 32px 0;
+}
+#about .intro{
+    line-height: 30px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+#about .description{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0;
+}
+#about p{
+    margin: 15px 0;
+}
+/*end*/
+#end{
+    display: flex;
+    padding: 32px 8px;
+}
+#end .item{
+    width: 33.33333%;
+    text-align: left;
+    padding: 0 8px;
+}
+#end .title{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 10px 0;
+}
+#end .footer p{
+    margin: 15px 0;
+}
+#end .footer p a{
+    color: #000;
+}
+#end .blog-posts li{
+    list-style: none;
+    padding: 16px;
+    height: 82.5px;
+}
+#end .blog-posts li:hover{
+    background-color: #ccc;
+}
+#end .blog-posts .above{
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+#end .blog-posts li img{
+    width: 50px;
+    float: left;
+    margin-right: 16px;
+}
+#end .blog-posts li .name{
+    font-size: 18px;
+}
+#end .popular-tags span{
+    font-family: serif;
+    color: #fff;
+    background-color: #616161;
+    font-size: 12px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    display: inline-block;
+    line-height: 18px;
+}
+#end .popular-tags .first{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+@media (max-width:620px){
+    #menu .row1,#menu .row2{
+        display: inline-block;
+    }
+    #menu .dish{
+        width: 100%;
+    }
+    #end{
+        display: inline-block;
+    }
+    #end .item{
+        width: 100%;
+    }
+}
