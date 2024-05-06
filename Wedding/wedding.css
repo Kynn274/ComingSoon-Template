@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Raleway',sans-serif;
+    color: #000;
+    line-height: 22.5px;
+}
+/*menubar*/
+#menubar{
+    background-color: #fff;
+    opacity: 0.75;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    padding: 8px 16px;
+    width: 100%;
+    z-index: 1;
+}
+#menubar:hover{
+    opacity: 1;
+}
+#menubar a{
+    font-size: 15px;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    color: #000;
+    padding: 8px 16px;
+}
+#menubar a:hover{
+    background-color: #ccc;
+}
+#menubar .RSVP:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*Home*/
+#home{
+    background-image: url(./img/wedding_couple.jpg);
+    filter: grayscale(0.5);
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 4px;
+    position: relative;
+    display: block;
+    min-height: 604px;
+    color: #fff;
+}
+#home .name,#home .event,#home .date{
+    margin: 10px 0;
+    text-align: center;
+}
+#home .name{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+}
+#home .event,#home .date{
+    font-size: 30px;
+    line-height: 45px;
+}
+#home .info{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*Jane and John*/
+#Jane-John{
+    padding: 64px 16px;
+    background-color: rgb(255, 221, 221);
+    filter: grayscale(0.5);
+    position: relative;
+}
+#Jane-John .title b{
+    color: #757575;
+    font-size: 36px;
+    line-height: 54px;
+}
+#Jane-John .title{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+#Jane-John img{
+    width: 100%;
+    filter: grayscale(0.5);
+    border-radius: 4px;
+    margin: 32px 0;
+}
+#Jane-John p{
+    text-align: left;
+    line-height: 30px;
+    margin: 15px 0;
+    font-size: 15px;
+}
+#Jane-John .button{
+    text-align: center;
+}
+#Jane-John .button a{
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    line-height: 36px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+#Jane-John .button a:hover{
+    background: #ccc;
+    color: #000;
+}
+#Jane-John .inside{
+    margin: 0 8px;
+}
+/*mid-img*/
+#mid-img{
+    background-image: url(./img/flowers.jpg);
+    background-position: center;
+    background-size: cover;
+    letter-spacing: 4px;
+    position: relative;
+    display: block;
+    min-height: 604px;
+    color: #fff;
+}
+#mid-img .name,#mid-img .event{
+    margin: 10px 0;
+    text-align: center;
+}
+#mid-img .name{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+}
+#mid-img .event{
+    font-size: 30px;
+    line-height: 45px;
+}
+#mid-img .info{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*wedding*/
+#wedding{
+    padding: 64px 16px;
+    background-color: rgb(255, 221, 221);
+    filter: grayscale(0.5);
+    position: relative;
+}
+#wedding .title b{
+    color: #757575;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+#wedding .title{
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+#wedding img{
+    width: 100%;
+    filter: grayscale(0.5);
+    border-radius: 4px;
+    margin: 64px 0;
+}
+#wedding .inside{
+    margin: 0 8px;
+}
+#wedding .content{
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+#wedding .half{
+    width: 100%;
+}
+#wedding .half .item-title{
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+}
+#wedding .half p{
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 30px;
+}
+/*RSVP*/
+#RSVP{
+    padding: 64px 16px;
+    background-color: #ffdddd;
+}
+#RSVP .title{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 10px 0;
+    width: 100%;
+}
+#RSVP .title,#RSVP .note{
+    text-align: center;
+    letter-spacing: 4px;
+}
+#RSVP .note{
+    margin: 18px 0;
+    font-size: 18px;
+    line-height: 36px;
+}
+#RSVP .button{
+    text-align: center;
+    opacity: 0.6;
+    margin: 24px 0;
+}
+#RSVP .button button{
+    background: #f44336;
+    color: #fff;
+    padding: 8px 60px;
+    border-radius: 4px;
+    line-height: 48px;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    border: 0;
+}
+#RSVP .button button:hover{
+    background: #ccc;
+    color: #000;
+    opacity: 1;
+    cursor: pointer;
+}
+/*footer*/
+#footer{
+    padding: 16px 0;
+    background-color: #000;
+    margin-bottom: 25px;
+}
+#footer p{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+#footer p a{
+    color: #fff;
+}
+#footer p a:hover{
+    color: #4CAF50;
+}
+/*form*/
+#form{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    padding-top: 100px;
+}
+@keyframes appear{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+#form .main-form{
+    margin: 0 auto;
+    width: 600px;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    animation: appear 0.6s;
+}
+#form .main-form .container{
+    padding: 0.15px 16px;
+}
+#form .main-form .title{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#form .main-form .description{
+    color: #000;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+}
+#form .main-form input{
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    line-height: 22.5px;
+    border: 1px solid rgb(204, 204, 204);
+    font-family: 'Raleway',sans-serif;
+    font-size: 15px;
+}
+#form .main-form .control{
+    display: flex;
+    width: 100%;
+}
+#form .main-form button{
+    width: 100%;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    border: 0;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+#bt1{
+    background-color: #4caf50;
+}
+#bt2{
+    background-color: #f44336;
+}
+#form .main-form button:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+@media (max-width:825px){
+    #form .main-form{
+        width: 500px;
+    }
+}
+@media (max-width:728px){
+    #home,#mid-img{
+        min-height: 632px;
+    }
+}
+@media (max-width:647px){
+    #wedding .content{
+        display: block;
+    }
+    #wedding .half{
+        line-height: 160px;
+        align-items: center;
+        display: inline-block;
+    }
+    #form .main-form{
+        margin: 0 10px;
+        width: auto;
+    }
+    #form .main-form .control{
+        display: block;
+        width: 100%;
+    }
+    #menubar{
+        display: none;
+    }
+}
+@media (max-width:467px){
+    #home,#mid-img{
+        min-height: 642px;
+    }
+}
