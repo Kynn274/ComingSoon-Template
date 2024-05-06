@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    /*font-family:Arial, Helvetica, sans-serif;*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+
+/*taskbar*/
+#taskbar{
+    width: 120px;
+    height: 100%;
+    background-color: #222;
+    position: fixed;
+    line-height: 0;
+}
+#taskbar .figure-img,#taskbar .figure-img img{
+    width: 100%;
+    display: inline-block; 
+}
+#taskbar .figure-img{
+    height: 0;
+}
+#taskbar a{
+    text-align: center;
+    padding: 12px 24px;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+#taskbar a:hover{
+    background-color: #000;
+}
+#taskbar a p{
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 12px 0;
+}
+#taskbar a i{
+    font-size: 30px;
+}
+#taskbar .home{
+    background-color: black;
+}
+#taskbar .home:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+/*container*/
+#container{
+    margin-left: 120px ;
+    padding: 12px 24px;
+}
+#personal-img{
+    padding: 32px 16px;
+    text-align: center;
+}
+#personal-img .name{
+    font-size: 64px;
+    margin: 10px 0;
+    width: 100%;
+}
+#personal-img .job{
+    margin: 15px 0;
+}
+#personal-img img{
+    max-width: 992px;
+    width: 100%;
+}
+
+/*introduction*/
+/*name*/
+#introduction,#photos,#contact,#footer{
+    margin: 0 auto;
+    max-width: 980px;;
+    padding: 64px 0;
+}
+#introduction .name>.title,#photos>.title,#contact>.title{
+    font-size: 30px;
+    line-height: 45px;
+}
+#introduction .name .content{
+    text-align: justify;
+    color: rgb(117, 117,117);
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 15px 0;
+}
+hr{
+    width: 200px;
+    margin: 20px 0;
+    border: 0;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.6;
+}
+.title{
+    width: 100%;
+    margin: 10px 0;
+    color: rgb(241, 241, 241);
+}
+
+/*skills*/
+#introduction .skills .title,#introduction .price .title,#introduction .reputation .title{
+    padding: 16px 0;
+    line-height: 36px;
+    font-size: 24px;
+}
+#introduction .skills .name{
+    font-size: 16px;
+    color: rgb(117, 117,117);
+    margin: 15px 0;
+    width: 100%;
+    letter-spacing: 4px;
+}
+#introduction .skills .backline,#introduction .skills .frontline{
+    width: 100%;
+    height: 28px;
+}
+#introduction .skills .backline{
+    background-color: #fff;
+}
+#introduction .skills .frontline{
+    background-color: rgb(97, 97, 97);
+    z-index: 2px;
+}
+#introduction .skills .photography .frontline{
+    width: 95%;
+}
+#introduction .skills .web-design .frontline{
+    width: 85%;
+}
+#introduction .skills .photoshop .frontline{
+    width: 80%;
+}
+#introduction .skills .experience{
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    background-color: rgb(241, 241, 241);
+    color: #000;
+    display: inline-flex;
+    text-align: center;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+/*experience*/
+#introduction .experience span{
+    font-size: 24px;
+}
+#introduction .experience .experience-item{
+    width: 25%;
+    margin: 16px 0;
+    line-height: 1.5;
+    opacity: 0.9;
+    box-sizing: content-box;
+}
+/*button*/
+#introduction .skills button{
+    font-size: 16px;
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    margin: 16px 0;
+    padding: 12px 24px;
+    line-height: 22.5px;
+}
+#introduction .skills button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*price*/
+#introduction .price .title{
+    width: 100%;
+    display: block;
+    line-height: 36px;
+}
+#introduction .price .table{
+    display: flex;
+    margin: 0 -8px;
+}
+#introduction .price .basic,#introduction .price .pro{
+    width: 50%;
+    list-style: none;
+    padding: 0 8px;
+    text-align: center;
+    opacity: 0.6;
+}
+#introduction .price .basic:hover,#introduction .price .pro:hover{
+    opacity: 1;
+}
+#introduction .price .start{
+    font-size: 24px;
+    background-color: #616161;
+    padding: 32px 16px;
+    line-height: 36px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: #fff;
+}
+#introduction .price li{
+    font-size: 16px;
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+    line-height: 22.5px;
+}
+#introduction .price .pre-end .money{
+    font-size: 30px;
+    margin: 10px 0;
+    color: #000;
+    width: 100%;
+    line-height: 45px;
+}
+#introduction .price .pre-end span{
+    color: rgba(0, 0, 0, 0.6);
+}
+#introduction .price .end{
+    background-color: #f1f1f1;
+}
+#introduction .price .end button{
+    border: 0;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    line-height: 22.5px;
+}
+#introduction .price .end button:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+/*reputation*/
+#introduction .reputation{
+    position: relative;
+}
+#introduction .reputation img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+#introduction .reputation .first-line,
+#introduction .reputation .sec-line{
+    position: absolute;
+    margin: 15px 0;
+    left: 100px;
+    color: rgb(117, 117,117);
+    font-size: 15px;
+}
+#introduction .reputation .first-line{
+    display: flex;
+}
+#introduction .reputation .man .first-line{
+    top:70px;
+    line-height: 27px;
+}
+#introduction .reputation .man .sec-line{
+    top:110px;
+}
+#introduction .reputation .girl .first-line{
+    top:175px;
+    line-height: 27px;
+}
+#introduction .reputation .girl .sec-line{
+    top:215px;
+}
+#introduction .reputation .name{
+    margin-right: 16px;
+    font-size: 18px;
+}
+/*photos*/
+#photos .album{
+    display: flex;
+    padding: 0 8px;
+    margin: 0 -16px;
+}
+#photos .left,#photos .right{
+    width: 50%;
+    padding: 0 8px;
+    line-height: 0;
+
+}
+#photos img{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+/*contact*/
+/*detail*/
+#contact .detail div{
+    margin: 15px 0;
+    color: #757575;
+}
+#contact .detail div i{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    width: 46.28px;
+    margin-right: 16px;
+}
+#contact .form p{
+    width: 100%;
+    margin: 15px 0;
+    line-height: 22.5px;
+    color: #757575;
+}
+#contact .form{
+    line-height: 1;
+}
+#contact .form input{
+    padding: 16px 8px;
+    width: 100%;
+    line-height: 22.5px;
+    font-size: 17px;
+    border: 0;
+}
+#contact .form button{
+    border: 0;
+    line-height: 22.5px;
+    padding: 12px 24px;
+    font-size: 15px;
+    background-color: rgb(241, 241, 241);
+}
+#contact .form button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/*footer*/
+#footer i{
+    font-size: 24px;
+    color: rgb(117, 117,117);
+}
+#footer i:hover{
+    opacity: 0.6;
+}
+#footer p,#footer a{
+    font-size: 16px;
+    color: rgb(117, 117,117);
+    line-height: 22.5px;
+    margin: 15px 0;
+}
+#footer a:hover{
+    color: #4CAF50;
+}
+@media (max-width:600px){
+    #container{
+        width: 100%;
+        margin-left: auto;
+    }
+    #taskbar .figure-img,#taskbar a i,#taskbar br{
+        display: none;
+    }
+    #taskbar{
+        height: 34px;
+        width: 100%;
+        display: flex;
+        opacity: 0.8;
+    }
+    #taskbar .home{
+        opacity: 0.8;
+        background-color: #222;
+    }
+    #taskbar a{
+        padding: 0;
+    }
+    #taskbar a p{
+        padding: 8px 16px;
+        margin: 0;
+        line-height: 18px;
+        display: inline-block;
+    }
+    #introduction .experience .experience-item{
+        width: 100%;
+        height: 58.5px;
+    }
+    #introduction .price .basic,#introduction .price .pro{
+        width: 100%;
+    }
+    #introduction .price .table{
+        display: block;
+        box-sizing: content-box;
+    }
+    #photos .album{
+        display: inline-block;
+    }
+    #photos .left,#photos .right{
+        width: 100%;
+    }
+}
